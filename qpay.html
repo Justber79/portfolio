@@ -14,6 +14,21 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
     <title>Bereza-Design</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+        <style>
+            body {            
+               background: #4534AD;
+               background: -webkit-linear-gradient(#4534AD, #241E97, #01062D);
+               background:    -moz-linear-gradient(#4534AD, #241E97, #01062D);
+               background:         linear-gradient(#4534AD, #241E97, #01062D);
+               color: white;
+                 }
+        </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
@@ -31,7 +46,7 @@
         </div>
     </header>
     <main>
-        <section class="qpay-home">
+        <section class="project-hero__content-wrapper">
             <div class="container">
                 <h1>QPay</h1>
                 <p>
@@ -39,15 +54,13 @@
                 </p>
             </div>
         </section>
-        <section class="qpay-project">
+        <section class="project-card__media-wrapper">
             <div class="container">
-                <div class="qpay-project-card">
-                    <div class="qpay-project-card__into-wrapper">
-                        <picture>
-                            <source srcset="img/qpay/qpay-intro.jpg" media="(max-width:767px)">
-                            <img src="img/qpay/qpay-intro.jpg" alt="The cover image of the QPay Digital Wallet app">
-                        </picture>
-                    </div>
+                <div class="project-hero__media-wrapper">
+                    <picture>
+                        <source srcset="img/qpay/qpay-intro.jpg" media="(max-width:767px)">
+                        <img src="img/qpay/qpay-intro.jpg" alt="The cover image of the QPay Digital Wallet app">
+                    </picture>
                 </div>
             </div>
             <div class="container">
@@ -112,9 +125,11 @@
                     alt="QPay app designs for iOS and Android">
                 </div>
             </div> 
+        </section>
+        <section class="project-card__content-wrapper">
             <div class="container">
                 <h2>Discover</h2>
-                <div class="qpay-discover__content-wrapper"></div>
+                <div class="qpay-discover__content-wrapper">
                     <h3>The Project Proposal</h3>
                 </div>
                 <div class="discover-content">
@@ -155,8 +170,7 @@
                             <li>Paypal although is very simple and intuitive to use doesn’t have a loyalty program and the mobile UI design seems a bit monotonous and old fasioned.</li>
                         </ul>
                     </div>
-                </div>
-                <div class="competitor-research__content-wrapper">
+                    <div class="competitor-research__content-wrapper">
                     <h3>Payback</h3>
                     <p>
                         Payback is a loyalty program that allows also mobile payments and let user to earn points and rewards when making purchases from participating partner brands, and these points can often be redeemed for discounts or rewards.
@@ -174,6 +188,8 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="project-card__media-wrapper">
             <div class="container">
                 <div class="qpay-define__content-wrapper">
                        <h2>Define</h2>
@@ -198,20 +214,23 @@
                         alt="User Personas Card - Elke">
                 </div>
             </div>
+        </section>
+        <section class="project-card__media-wrapper">
             <div class="container">
-                <div class="qpay-develop__content-wrapper"></div>
+                <div class="qpay-develop__content-wrapper">
                     <h2>Develop</h2>
                     <h3>User Flow</h3>
                     <p>
                         This is how a typical user flow of sending the money to another user would look like. The goal is to send a specific amount of money in an international currency (in this case it is British pound - GBP) to another user of the app.
                     </p>
-                    </div>
-                    <div class="qpay-develop__media-wrapper">
-                        <img src="img/qpay/qpay-user-flow.png"
-                        alt="QPay User Flow">
-                    </div>
+                </div>
+                <div class="qpay-develop__media-wrapper">
+                    <img src="img/qpay/qpay-user-flow.png"
+                    alt="QPay User Flow">
                 </div>
             </div>
+        </section>
+        <section class="project-card__media-wrapper">
             <div class="container">
                 <div class="qpay-design__content-wrapper">
                        <h2>Design</h2>
@@ -236,6 +255,8 @@
                     alt="Qpay Android - Low/Mid Wireframes design">
                 </div>
             </div>
+        </section>
+        <section class="project-card__media-wrapper">
             <div class="container">
                 <div class="qpay-design__content-wrapper">
                        <h2>Delivery</h2>
@@ -260,6 +281,8 @@
                     alt="Qpay Android mockups design">
                 </div>
             </div>
+        </section>
+        <section class="project-card__media-wrapper">
             <div class="container">
                 <div class="qpay-conclusion__content-wrapper">
                     <h2>Conclusion</h2>
@@ -272,25 +295,19 @@
              <div class="conclusion__table-wrapper"></div>
                 <h2>Next Steps</h2>
                 <div class="table-contents">
-                    <p>
-                        Refine User Flow
-                    </p>
+                    <h4>Refine User Flow</h4>
                     <p>
                         Design a proper user flow for the app's loyalty rewards program and how to use wallet.
                     </p>
                 </div>
                 <div class="table-contents">
-                    <p>
-                        Add more wireframes
-                    </p>
+                    <h4>Add more wireframes</h4>
                     <p>
                         Create more wireframes for the loyalty program, user account profile and wallet screen.
                     </p>
                 </div>
                 <div class="table-contents">
-                    <p>
-                        Conduct A/B tests
-                    </p>
+                    <h4>A/B tests</h4>
                     <p>
                         Conduct more A/B tests on some of my screens.
                     </p>
@@ -315,7 +332,7 @@
         <div class="container">
             <h2>Get in Touch</h2>
             <p>
-                Thank you for watching. If you like my work and want to discuss opportunities? <a href="contact.html">Please get in touch.</a>
+                Thank you for watching. If you like my work and want to discuss opportunities? <a href="contact.html" class="button contact">Please get in touch</a>
             </p>
             <div class="social-media">
             <!--Social Media Layout and Placeholders-->
