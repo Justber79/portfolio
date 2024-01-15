@@ -25,10 +25,10 @@
     <header>
         <div class="container">
             <a href="index.html">
-                <img src="img/Jb_logo.png" alt="Logo Bereza Design">
+                <img class="logo" src="img/Jb_logo.png" alt="Logo Bereza Design">
             </a>
             <nav>
-                <ul>
+                <ul class="navigation">
                   <li><a href="index.html">Work</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="contact.html">Contact</a></li>
@@ -37,9 +37,9 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <div id="hero">
             <div class="container">
-                <h1>Hi, my name is Justyna Bereza. <span>I'm a UI Designer living near Berlin</span></h1>
+                <h1 class="center">Hi, my name is Justyna Bereza. <span>I'm a UI Designer living near Berlin</span></h1>
                 <p>
                     I've been always passionate about creativity and continuous learning.
                 </p>
@@ -47,10 +47,11 @@
                     Visual design is where I channel my creativity to craft compelling, user friendly and aesthetically pleasing designs.
                 </p>
             </div>
-        </section>
-        <section class="projects">
+        </div>
+        <div id="projects">
             <div class="container">
-                <h2>My Work</h2>
+              <h2>My Work</h2>
+              <div class="row">
                 <div class="project-card">
                     <div class="project-card__media-wrapper">
                         <picture>
@@ -69,6 +70,8 @@
                         <a href="qpay.html" class="button">View Project</a>
                     </div>
                 </div>
+              </div>
+              <div class="row">
                 <div class="project-card">
                     <div class="project-card__media-wrapper">
                         <picture>
@@ -87,8 +90,9 @@
                         <a href="smartstash.html" class="button">View Project</a>
                     </div>
                 </div>
+              </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="container">
