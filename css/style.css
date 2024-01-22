@@ -69,8 +69,8 @@ h1, h2, h3, h4 {
 
   .button {
     display: inline-block; 
-    background-color: #C6D5DE;
-    color: #757474; 
+    background-color:#638eff; 
+    color: white; 
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
@@ -81,6 +81,7 @@ h1, h2, h3, h4 {
   .button:visited {
     opacity: 1.00; 
     text-decoration: none;
+    color: white;
   }
   .button:hover {
     opacity: 0.8; 
@@ -100,6 +101,7 @@ h1, h2, h3, h4 {
     color: #6daee7;
     text-transform: uppercase;
     border: 2px solid #6daee7;
+    margin-bottom: 2em;
   }
   .button.contact:visited {
     background-color: #C6D5DE;
@@ -148,6 +150,18 @@ h1, h2, h3, h4 {
   .logo {
     max-width: 45px;
   }
+  nav a
+  {
+      color:#4a4a4a;
+      text-decoration: none;
+      font: 15px 'Poppins', sans-serif;
+      margin: 0px 10px;
+      padding: 0 15px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+      font-weight: 400;
+  }
   nav > ul {
     list-style-type: none;
     padding: 0;
@@ -156,22 +170,16 @@ h1, h2, h3, h4 {
   nav > ul > li {
     display: inline-block;
   }
-  nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: none;
-    font-weight: 700;
-    color: #191a1b;
+  nav a:visited {
+    color: #4a4a4a;
   }
-  nav > ul > li > a:visited {
-    color: #191a1b;
-  }
-nav > ul > li > a:hover {
+nav a:hover {
     color: #8ea6e3;
 }
-nav > ul > li > a:focus {
+nav a:focus {
     color: #8ea6e3;
 }
-nav > ul > li > a:active {
+nav a:active {
     color: #939395;
 }
 
@@ -189,7 +197,7 @@ nav > ul > li > a:active {
     font-weight: 600;
 }    
   main {
-    padding-top: 82px;
+    padding-top: 97.75px;
   }
   .social-media svg {
     width: 32px;
@@ -203,6 +211,27 @@ nav > ul > li > a:active {
 .social-media svg:hover path {
   color: #7099d7;
 }
+.project-hero__media-wrapper img {
+  background: #513ece;
+  border-radius: 15px;
+  max-width: auto;
+  padding: 30px;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.qpay-delivery__media-wrapper img {
+  border-radius: 15px;
+}
+.row {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+} 
+footer {
+    text-align: center;
+    background: #2a2b33;
+    color: white;
+    padding-block: 5px;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -211,17 +240,34 @@ Medium devices (640px and larger)
       text-align: unset;
       padding: 20px 0 13px;
     }
-  
     nav {
       width: auto;
       float: right;
       margin-top: 4px;
     }
+    main {
+        padding-top: 85.16px;
+    }
     .col-md-6 {
-        width: 50%;
+      width: 50%;
       }
-    #about-page h3 { margin-top: 0;}
-}  
+    #about-page h3 { 
+      margin-top: 0;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+    .row::after {
+        content:"";
+        clear: both;
+        display: table;
+    }
+    .sticky {
+        position: sticky;
+        top: 90px;
+    }
+    }  
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -231,76 +277,30 @@ Large devices (1024px or larger)
         padding: 20px 0 13px;
       }
     
-      nav {
+    nav {
         width: auto;
         float: right;
         margin-top: 4px;
       }
-      .col-md-7 {
-          width: 58.33%;
+    .col-lg-7 {
+        width: 58.33%;
         }
-      .col-md-5 {
-          width: 41.66%;
+    .col-lg-5 {
+        width: 41.66%;
           }
-      #about-page h3 { margin-top: 0;}
-      .container {
+    #hero {
+        text-align: center;
+    }
+    #projects h2 {
+        text-align: center;
+    }
+    #about-page h3 { margin-top: 0;}
+    .container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
       }
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
-/* ==============================
-Extra-large devices (1920px or larger)
-================================= */
-@media only screen and (min-width: 1920px) {
-}
-[class*="col-"] {
-    float: left;
-    padding: 10px;
-}
-.about-picture svg {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-@keyframes color-change {
-    0% {fill: #edc655;}
-    50% {fill: #fcffad;}
-    100% {fill: #f76414;}
-}
-.sun {
-   animation: 4s color-change infinite alternate linear;
-} 
-@keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-}
-.cloud-front {
-   animation: 35s cloud-move infinite alternate linear;
-} 
-@keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
-}
-.cloud-back {
-    animation: 50s cloud-move-reverse infinite alternate linear;
-}
-nav a
-{
-    color:#4a4a4a;
-    text-decoration: none;
-    font: 20px 'Poppins', sans-serif;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-}
+  
 /* Border from Y to X  */
 .borderYtoX a:before, .borderYtoX a:after
 {
@@ -330,6 +330,46 @@ nav a
     opacity: 1;
     height: 2px;
     width: 100%;
+}
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
+
+.about-picture svg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+.sun {
+   animation: 4s color-change infinite alternate linear;
+} 
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+.cloud-front {
+   animation: 35s cloud-move infinite alternate linear;
+} 
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+    animation: 50s cloud-move-reverse infinite alternate linear;
 }
 
 
