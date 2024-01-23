@@ -12,7 +12,7 @@ qpay.html color (gradient background): #4534AD;
     box-sizing: border-box;
   }
 body {
-    background-color: #ffffff;
+    background-color: #f3f3fe;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -30,6 +30,7 @@ h1, h2, h3, h4 {
   h2 {
     font-size: 2.00em;
     font-weight: 700;
+    padding: 10px;
   }
   
   h3 {
@@ -42,6 +43,7 @@ h1, h2, h3, h4 {
   }
   img {
     width: 100%;
+    border-radius: 1em;
   }
   a {
     color: #838f9e;
@@ -141,11 +143,16 @@ h1, h2, h3, h4 {
   .center {
     text-align: center;
     }
-    .row::after {
+    .row::after,
+    .skills-tools__wrapper::after {
         content: "";
         clear: both;
         display: table;
       }
+    .skills-tools__wrapper {
+      width: 100%;
+      padding: 20px;
+    }
 
   .logo {
     max-width: 45px;
@@ -211,20 +218,27 @@ nav a:active {
 .social-media svg:hover path {
   color: #7099d7;
 }
-.project-hero__media-wrapper img {
+.project-hero__media-wrapper {
   background: #513ece;
   border-radius: 15px;
-  max-width: auto;
   padding: 30px;
   box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
+
+.project-hero__media-wrapper img {
+  max-width: 400px;
+}
+
 .qpay-delivery__media-wrapper img {
+  padding: 30px;
   border-radius: 15px;
 }
 .row {
     background: white;
     border-radius: 15px;
     box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
 } 
 footer {
     text-align: center;
@@ -268,6 +282,9 @@ Medium devices (640px and larger)
         top: 90px;
     }
     }  
+    iframe {
+      margin-bottom: 40px;
+    }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -371,7 +388,6 @@ Extra-large devices (1920px or larger)
 .cloud-back {
     animation: 50s cloud-move-reverse infinite alternate linear;
 }
-
 
   
   
