@@ -20,18 +20,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <i class="fas fa-bars"></i>
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="index.html">
-              <img class="logo" src="img/Jb_logo.png" alt="Logo Bereza Design">
-            </a>
-            <nav class="teal borderYtoX">
-                <a href="index.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>  
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                   <a href="index.html">
+                   <img class="logo" src="img/Jb_logo.png" alt="Logo Bereza Design">
+                   </a>
+                <nav class="teal borderYtoX">
+                   <a href="index.html">Work</a>
+                   <a href="about.html">About</a>
+                   <a href="contact.html">Contact</a> 
+                </nav>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </div> 
         </div>
     </header>
     <main>
@@ -728,6 +732,7 @@
             <p class="copyright">Copyright Justyna Bereza &copy; 2024</p>
         </div>
     </footer>
+    <script   src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

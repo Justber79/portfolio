@@ -123,7 +123,6 @@ h1, h2, h3, h4 {
 }
   header {
     background-color:#c8d4fa;
-    text-align: center;
     padding: 10px 0;
     border: solid #BDBDBD 1px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -174,9 +173,7 @@ h1, h2, h3, h4 {
     padding: 0;
     margin: 0;
   }
-  nav > ul > li {
-    display: inline-block;
-  }
+  
   nav a:visited {
     color: #4a4a4a;
   }
@@ -246,6 +243,19 @@ footer {
     color: white;
     padding-block: 5px;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -258,6 +268,9 @@ Medium devices (640px and larger)
       width: auto;
       float: right;
       margin-top: 4px;
+    }
+    nav > ul {
+      margin: 1em 0;
     }
     main {
         padding-top: 85.16px;
@@ -285,6 +298,10 @@ Medium devices (640px and larger)
     iframe {
       margin-bottom: 40px;
     }
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+    
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
