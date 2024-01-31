@@ -13,25 +13,29 @@
         <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-    <title>About Bereza Design</title>
+    <title>Bereza-Design</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <i class="fas fa-bars"></i>
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="index.html">
-              <img class="logo" src="img/Jb_logo.png" alt="Logo Bereza Design">
-            </a>
-            <nav class="teal borderYtoX">
-                <a href="index.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>  
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                   <a href="index.html">
+                   <img class="logo" src="img/Jb_logo.png" alt="Logo Bereza Design">
+                   </a>
+                <nav class="teal borderYtoX">
+                   <a href="index.html">Work</a>
+                   <a href="about.html">About</a>
+                   <a href="contact.html">Contact</a> 
+                   <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg></a>
+                </nav>    
+            </div> 
         </div>
     </header>
     <main>

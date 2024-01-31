@@ -201,7 +201,7 @@ nav a:active {
     font-weight: 600;
 }    
   main {
-    padding-top: 97.75px;
+    padding-top: 72.16px;
   }
   .social-media svg {
     width: 32px;
@@ -243,64 +243,82 @@ footer {
     color: white;
     padding-block: 5px;
 }
-.navtoggle li:not(:last-child) {
+.navtoggle nav a:not(:last-child) {
   display: none;
 }
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
-.navtoggle li .icon {
+.navtoggle nav .icon {
   position: absolute;
   padding-right: 0;
   right: 0;
-  top: 2px;
+  top:11px;
   font-size: 20px;
+}
+nav .icon svg {
+  width: 24px;
+}
+.navtoggle.responsive nav {
+  padding-top: 24px;
+}
+.navtoggle.responsive nav a:not(:last-child)  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive nav a:last-child  {
+  padding: 0 0 10px;
 }
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-    header {
-      text-align: unset;
-      padding: 20px 0 13px;
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  main {
+      padding-top: 85.16px;
+  }
+  .col-md-6 {
+    width: 50%;
     }
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
-    nav > ul {
-      margin: 1em 0;
-    }
-    main {
-        padding-top: 85.16px;
-    }
-    .col-md-6 {
-      width: 50%;
-      }
-    #about-page h3 { 
-      margin-top: 0;
-    }
-    [class*="col-"] {
-        float: left;
-        padding: 10px;
-    }
-    .row::after {
-        content:"";
-        clear: both;
-        display: table;
-    }
-    .sticky {
-        position: sticky;
-        top: 90px;
-    }
-    }  
-    iframe {
+  #about-page h3 { 
+    margin-top: 0;
+  }
+  [class*="col-"] {
+      float: left;
+      padding: 10px;
+  }
+  .row::after {
+      content:"";
+      clear: both;
+      display: table;
+  }
+  .sticky {
+      position: sticky;
+      top: 90px;
+  } 
+  iframe {
       margin-bottom: 40px;
-    }
-    .navtoggle li:not(:last-child) {
+  }
+  .navtoggle nav a:not(:last-child) {
       display: inline-block;
+  }
+
+  .navtoggle nav a:last-child {
+      display: none;
     }
+  }
     
 /* ==============================
 Large devices (1024px or larger)
