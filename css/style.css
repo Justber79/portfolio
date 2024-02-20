@@ -36,7 +36,6 @@ h1 {
 h2 {
   font-size: 2em;
   font-weight: 700;
-  padding: 10px;
 }
 
 h3 {
@@ -77,8 +76,12 @@ a:active {
 }
 
 .project-page {
-  background: linear-gradient(#4534ad, #241e97, #01062d);
+  background: linear-gradient(#4333ad, #241e97, #01062d);
   color: white;
+}
+
+.project-page header {
+  background: white;
 }
 
 .button {
@@ -275,9 +278,19 @@ main {
   border-radius: 15px;
 }
 
+.project-card__content-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.project-card__media-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
 .row {
   background: white;
-  border-radius: 15px;
+  border-radius: 0;
   box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
@@ -349,6 +362,14 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #projects h2 {
+    text-align: center;
   }
 
   #about-page h3 {
