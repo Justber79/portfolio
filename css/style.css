@@ -271,6 +271,7 @@ main {
 
 .project-hero__media-wrapper img {
   max-width: 400px;
+  margin: 0 auto;
 }
 
 .qpay-delivery__media-wrapper img {
@@ -278,12 +279,57 @@ main {
   border-radius: 15px;
 }
 
-.project-card__content-wrapper {
+.qpay-background__content-wrapper {
   max-width: 750px;
   margin: 0 auto;
 }
 
-.project-card__media-wrapper {
+.qpay-design-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.qpay-design__media-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.qpay-discover__content-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.competitor-research__content-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.qpay-define__content-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.qpay-develop__content-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.qpay-develop__media-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.qpay-design__content-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.qpay-delivery__content-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.qpay-conclusion__content-wrapper {
   max-width: 750px;
   margin: 0 auto;
 }
